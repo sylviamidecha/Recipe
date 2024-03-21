@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/form.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+  </head>
+  <body>
+<nav>
+        <div class="nav-bar">
+            <div class="logo_light">
+                <h1 class="italic">RECIPE</h1>
+            </div>
+            <div class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login </a></li>
+                <li> <a href="form.html" onclick="showForm()">Form </a></li>
+                <li><a href="recipe.html">Recipe </a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="form">
+    <h2>Recipe Form</h2>
+
+    <div id="error-message" class="error" style="display: none;">Please fill out all fields</div>
+
+    <div id="recipe-form-container">
+        <form id="recipe-form">
+            <label for="recipe-name">Recipe Name:</label><br>
+            <input type="text" id="recipe-name" name="recipe-name" required><br>
+            <label for="ingredients">Ingredients:</label><br>
+            <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br>
+            <label for="instructions">Instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit" id="add-recipe-btn">Add Recipe</button>
+        </form>
+    </div>
+
+    <div id="toggle-form-container" style="text-align: center;">
+        <button id="toggle-form-btn">Add Recipe</button>
+    </div>
+
+    <h2>Saved Recipes</h2>
+    <ul id="saved-recipes"></ul>
+    </div>
+    <section>
+        <div class="footer__container">
+            <div class="footer__content">
+               
+                <p style="color: white">stay connected</p>
+                <img src="images/facebook.png" width="40px" />
+                <img src="images/instagram.png" width="40px" />
+                <img src="images/twitter.png" width="40px" />
+            </div>
+            <div class="links">
+                <h2 style="color: white">Quick Links</h2>
+                <h3><a href="index.html">Home</a></h3>
+                <h3><a href="login.html">Login </a></h3>
+                <h3><a href="form.html">Form </a></h3>
+                <h3><a href="recipe.html">Recipe </a></h3>
+            </div>
+            <div class="footer__links">
+                <h2 style="color: white">Subscribe To Our Newsletter To Stay Updated.</h2>
+                <input placeholder="Email Address" class="email-input" />
+                <button class="Subscribe-button">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+          
+         <script src="js/form.js" ></script>
+      </body>
+      </html>

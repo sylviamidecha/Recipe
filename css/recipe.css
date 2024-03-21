@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  body
+  .nav-bar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .logo_light {
+    justify-content: end;
+    list-style-type: italics;
+    /* text-align: center; */
+  }
+  .nav-links {
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  nav {
+    background-color: rgb(208, 99, 38);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    list-style-type: none;
+    /* display: flex; */
+    justify-content: end;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    align-items: center;
+    padding-right: 0%;
+    justify-content: end;
+  }
+  
+  nav a:hover li {
+    text-decoration: underline;
+    list-style-type: none;
+  }
+  header{
+    padding-left: 40%;
+    padding-bottom: 10%;
+  }
+  header  h1{
+    padding-bottom: 5%;
+  }
+  header input{
+    text-align: center;
+    
+  }
+  /* header input[type="text"]{
+    color:black;
+  } */
+  .italic{
+    font-style: italic;
+  }
+  
+
+
+#recipeContainer {
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  text-align: center;
+}
+#searchInput {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  /* box-shadow: 0 0 2px black; */
+  border-radius: 2em;
+  cursor: pointer;
+  border: none;
+  /* background-color: rgb(208, 99, 38); */
+  color: black;
+  align-items:center ;
+}
+.recipeImage{
+    width: 200px;
+}
+.recipeCard {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.recipeImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.recipeButtons {
+  margin-top: 10px;
+  
+color: rgb(208, 99, 38);
+}
+
+.editButton, .deleteButton {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: rgb(208, 99, 38);
+  color: white;
+}
+.footer__container {
+  background-color: black;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10em;
+}
+.footer__content {
+  column-gap: 2em;
+  padding-top: 6%;
+  row-gap: 2em;
+}
+.footer__content img {
+  background-color: #fff;
+}
+
+.links h3 a {
+  list-style-type: none;
+  color: #fff;
+}
+.links {
+  column-gap: 2em;
+  padding-top: 6%;
+}
+.footer__links {
+  padding-top: 6%;
+}
+.Subscribe-button {
+  padding: 3em 3em;
+
+  background-color: rgb(208, 99, 38);
+  color: white;
+}
+
+.email-input {
+  padding: 3em 8em;
+  border: none;
+  margin-top: 2em;
+  outline: none;
+  column-gap: 2em;
+}
+
