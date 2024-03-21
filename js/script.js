@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
         currentSlideIndex = (currentSlideIndex + 1) % slides.length;
     }
 
-    // Call nextSlide to start the slideshow
+    
     nextSlide();
 
-    // Automatically transition to the next slide every 3 seconds
+   
     setInterval(nextSlide, 3000);
 });
