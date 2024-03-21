@@ -106,3 +106,28 @@ searchInput.addEventListener("input", function() {
     const filteredRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(searchTerm));
     displayRecipes(filteredRecipes);
 });
+function editRecipe(recipeId) {
+    const index = recipes.findIndex(recipe => recipe.id === recipeId);
+    if (index !== -1) {
+        const editedRecipe = recipes[index];
+        const newName = prompt("Enter new recipe name:", editedRecipe.name);
+        const newIngredients = prompt("Enter new ingredients (comma-separated):", editedRecipe.ingredients.join(","));
+        const newInstructions = prompt("Enter new instructions:", editedRecipe.instructions);
+        const newImage = prompt("Enter new image URL:", editedRecipe.image);
+
+        if (newName && newIngredients && newInstructions && newImage) {
+            editedRecipe.name = newName;
+            editedRecipe.ingredients = newIngredients.split(",").map(ingredient => ingredient.trim());
+            editedRecipe.instructions = newInstructions;
+            editedRecipe.image = newImage;
+
+            // Update the recipe in the array
+            recipes[index] = editedRecipe;
+
+            // Refresh display
+            displayRecipes(recipes);
+        } else {
+            alert("Invalid input. Please fill in all fields.");
+        }
+    }
+}
